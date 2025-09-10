@@ -51,21 +51,27 @@
         <div class="mb-3">
             <label for="category" class="form-label">Category</label>
             <select name="listing[category]" id="category" class="form-select" required>
-                <option value="" disabled selected>Select a category</option>
-                <option value="Trending">Trending</option>
-                <option value="Rooms">Rooms</option>
-                <option value="Iconic_Cities">Iconic Cities</option>
-                <option value="Mountains">Mountains</option>
-                <option value="Castles">Castles</option>
-                <option value="Amazing_Pools">Amazing Pools</option>
-                <option value="camping">Camping</option>
-                <option value="Farms">Farms</option>
-                <option value="Arctic">Arctic</option>
+                <option value="" disabled>Select a category</option>
+                <option value="Trending" <%=listing.category==="Trending" ? "selected" : "" %>>Trending</option>
+                <option value="Rooms" <%=listing.category==="Rooms" ? "selected" : "" %>>Rooms</option>
+                <option value="Iconic_Cities" <%=listing.category==="Iconic_Cities" ? "selected" : "" %>>Iconic Cities</option>
+                <option value="Mountains" <%=listing.category==="Mountains" ? "selected" : "" %>>Mountains</option>
+                <option value="Castles" <%=listing.category==="Castles" ? "selected" : "" %>>Castles</option>
+                <option value="Amazing_Pools" <%=listing.category==="Amazing_Pools" ? "selected" : "" %>>Amazing Pools</option>
+                <option value="camping" <%=listing.category==="camping" ? "selected" : "" %>>Camping</option>
+                <option value="Farms" <%=listing.category==="Farms" ? "selected" : "" %>>Farms</option>
+                <option value="Arctic" <%=listing.category==="Arctic" ? "selected" : "" %>>Arctic</option>
             </select>
             <div class="invalid-feedback">Please select a category</div>
         </div>
+
         
+    
         <button class="btn btn-dark edit-btn mb-3">Edit</button>
+    
+
+
+
     </form>
     </div>
     </div>
